@@ -75,10 +75,10 @@
         win_default_layer {
             display-name = "BASE";
             bindings = <
-&mt LANG4 Q   &mt LANGUAGE_2 W  &kp E             &kp R        &kp T        &kp Y        &kp U       &kp I     &kp O  &kp P
+&mt LANG4 Q   &mt LANGUAGE_2 W  &mt LANGUAGE_1 E  &kp R        &kp T        &kp Y        &kp U       &kp I     &kp O  &kp P
 &mt LSHIFT A  &mt LEFT_SHIFT S  &kp D             &kp F        &kp G        &kp H        &kp J       &kp K     &kp L  &mt MINUS MINUS
 &kp Z         &kp X             &kp C             &kp V        &kp B        &mkp MB1     &mkp MB2    &kp N     &kp M  &kp COMMA        &kp DOT  &lt 4 RS(SLASH)
-&kp LWIN      &mt LCTRL TAB     &mt LSHIFT SPACE  &lt 2 SPACE  &lt 1 ENTER  &lt 1 ENTER  &lt 3 BSPC  &kp RALT
+&kp LWIN      &mt LCTRL TAB     &kp LEFT_GUI      &lt 2 SPACE  &lt 1 ENTER  &lt 1 ENTER  &lt 3 BSPC  &kp RALT
             >;
 
             sensor-bindings =
@@ -99,7 +99,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
@@ -109,8 +109,8 @@
             display-name = "NUM / ARROW";
             bindings = <
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5            &kp NUMBER_6  &kp N7  &kp N8     &kp N9     &kp N0
-&kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT     &kp PAGE_UP    &kp LANG_HANGEUL  &none         &trans  &kp MINUS  &kp TILDE  &trans
-&trans          &kp DOWN      &trans        &kp PAGE_DOWN  &kp LANGUAGE_2    &trans        &trans  &trans     &trans     &kp LBKT  &kp RIGHT_BRACKET  &trans
+&kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT     &kp PAGE_UP    &kp LANG_HANGEUL  &kp HOME      &trans  &kp MINUS  &kp TILDE  &trans
+&trans          &kp DOWN      &trans        &kp PAGE_DOWN  &kp LANGUAGE_2    &trans        &trans  &kp END    &trans     &kp LBKT  &kp RIGHT_BRACKET  &trans
 &trans          &trans        &trans        &trans         &trans            &trans        &trans  &trans
             >;
 
@@ -132,7 +132,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LC(MINUS) LC(EQUAL)>,
-                // RE0: ctrl + - / +,,,,,,,,,,,,,,,
+                // RE0: ctrl + - / +,,,,,,,,,,,,,,,,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // RE1: volume down/up
